@@ -24,8 +24,10 @@ public class BuscarRemplazar extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         buscarTextField = new TextField();
+        buscarTextField.setMaxWidth(Double.MAX_VALUE);
 
         remplazarTextField = new TextField();
+        remplazarTextField.setMaxWidth(Double.MAX_VALUE);
 
         checkBox1 = new CheckBox("Mayúsculas y minúsculas");
         checkBox2 = new CheckBox("Buscar hacia atras");
@@ -39,7 +41,6 @@ public class BuscarRemplazar extends Application {
         button5 = new Button("Ayuda");
 
         GridPane labeltextbox =new GridPane();
-        labeltextbox.setGridLinesVisible(true);
         labeltextbox.setHgap(5);
         labeltextbox.setVgap(5);
         labeltextbox.setPadding(new Insets(5));
